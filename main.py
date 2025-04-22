@@ -19,6 +19,10 @@ app.add_middleware(
 )
 
 @app.get("/")
-async def main():
+def main():
+    return {"message": "Hello World"}
+
+@app.get("/Auth")
+def auth():
     return {"message": "Hello World"}
 
